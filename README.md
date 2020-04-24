@@ -1,5 +1,6 @@
 # automationpractice.com
 automationpractice.com to przygotowana strona symulująca sklep internetowy. Pozwala prześledzić cały proces zakupów w sklepie internetowym. Jest to doskonałe miejsce do poznania i przetestowania nowych umiejętności związanych z testowaniem automatycznym.
+
 Narzędzia:
 
 • Selenium Web Driver
