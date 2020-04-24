@@ -30,12 +30,17 @@ public class AutomationPractice {
     @Before
     public void setUp(){
         // Uruchamiamy nowy egzemplarz przegladarki Chrome
-        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\lazarluk\\chromedriver.exe");
         driver = new ChromeDriver();
+
+        //Dla tych co korzystaja z Firefoxa. Nalezy zakomentowac dwie linijki wyzej
+        //System.setProperty("webdriver.gecko.driver","C:\\geckodriver.exe");
+        //driver = new FirefoxDriver();
+
         // Maksymalizujemy okno
         driver.manage().window().maximize();
 
-//        // Ustawienie czasu niejawnego oczekiwania na 10 sekund
+        // Ustawienie czasu niejawnego oczekiwania na 10 sekund
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         // Przechodzimy na wybrana strone
